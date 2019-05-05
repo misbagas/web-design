@@ -1,0 +1,362 @@
+<html>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+ 
+body {
+	background: #eee;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+ 
+hr {
+	border:0;
+	background:#dedede;
+	height:1px;
+}		
+ 
+header{
+	text-align: center;
+	color: #232323;
+}
+ 
+header .judul{
+	font-size: 17pt;
+}
+ 
+header .deskripsi{
+	font-size: 11pt;
+}
+ 
+.wrap {
+	width: 950px;
+	margin:25px auto;
+}
+ 
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	width: 650px;
+	margin:0 0 0;
+	background: #1abc9c;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+ 
+nav.menu ul li {
+	margin:0;
+	float:left;
+}
+ 
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+ 
+nav.menu ul a:hover {
+	text-decoration: underline;
+	background:#16a085;
+}
+ 
+.sidebar {
+	float:right;
+	width:275px;
+}
+ 
+.sidebar .widget {
+	padding:25px;
+	margin:0 0 25px;
+	background:#fff;
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s ease;
+}
+ 
+.sidebar .widget:hover {
+	border-bottom: 2px solid #3498db;
+}
+ 
+.sidebar .widget h2 {
+	padding:0;
+	margin:0 0 15px;
+	color:#3498db;
+	font-size: 18px;
+	font-weight:800;
+	text-transform: uppercase;
+}
+ 
+.sidebar .widget p {
+	font-size: 14px;
+}
+ 
+.sidebar .widget p:last-child {
+	margin:0;
+}
+ 
+.blog {
+	float:left;
+}
+ 
+.conteudo {
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: #fff;
+	border:1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+ 
+.conteudo img {
+	min-width: 650px;
+	margin:0 0 25px -25px;
+	max-width: 650px;
+}
+ 
+.conteudo h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+ 
+.conteudo p:last-child {
+	margin: 0;
+}
+ 
+.conteudo .continue-lendo {
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+}
+ 
+.conteudo .continue-lendo:hover {
+	margin-left:10px;
+}
+ 
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
+}
+ 
+@media screen and (max-width: 960px) {
+ 
+	.header {
+		position:inherit;
+	}
+ 
+	.wrap {
+		width: 90%;
+		margin:25px auto;
+	}
+	.sidebar {
+		width:100%;
+		margin:25px 0 0;
+		float:right;
+	}
+ 
+	.sidebar .widget {
+		padding:5%;
+	}
+ 
+	nav.menu ul {
+		width: 100%;
+	}
+ 
+	nav.menu ul {
+		float:inherit;
+	}
+ 
+	nav.menu ul li {
+		float:inherit;
+		margin:0;
+	}
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid #1abf9f;
+		border-bottom:1px solid #16a085;
+	}
+ 
+	.blog {
+		width:90%;
+	}
+ 
+	.conteudo {
+		float:inherit;
+		margin:0 auto 25px;
+		width:101%;
+		border:1px solid #dedede;
+		padding:5%;  
+		background: #fff;
+	}
+ 
+	.conteudo img {
+		max-width: 110%;
+		margin:0 0 25px -5%;
+		min-width: 110%;
+	}
+ 
+	.conteudo .continue-lendo:hover {
+		margin-left:0;
+	}
+ 
+ 
+}
+ 
+@media screen and (max-width: 460px) {
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+ 
+	.sidebar {
+		display:none
+	}
+	.post-info {
+		display:none;
+	}
+ 
+	.conteudo {
+		margin:25px auto;
+	}
+ 
+	.conteudo img {
+		margin:-5% 0 25px -5%;
+	}			
+}
+
+</style>
+
+<head>
+	<title>islam_ku</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<!-- bagian header template -->
+	<header>
+		<h1 class="judul">masak-seru.com</h1>
+		<p class="deskripsi">menyediakan berbagai tutorial memasak.
+		</p>
+	</header>
+	<!-- akhir bagian header template -->
+	
+	<div class="wrap">
+		<!-- bagian menu		 -->
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Tutorial</a>
+				</li>
+				<li>
+					<a href="#">Kontak</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- akhir bagian menu -->
+ 
+		<!-- bagian sidebar website -->
+		<aside class="sidebar">
+			<div class="widget">
+				<h2>Pengenalan</h2>
+				<p>Selamat datang di www.masak-seru.com, situs ini menyediakan tutorial tentang memasak.</p>
+			</div>
+		</aside>
+		
+		
+			<div class="conteudo">
+				<div class="post-info">
+				</div>
+				<p><h2>Resep Cara Membuat Donat Original</h2></p>
+				<img class="img-responsive" src="https://cdn0-production-images-kly.akamaized.net/5xeMQCCmOtJfc9JD85TJZGCOinE=/0x0/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2485950/original/093820400_1543329300-resep-donat-empuk-yang-mudah-dibuat.jpg"/>
+
+				<p>
+					<strong>bahan:</strong>
+				</p>
+				<p>1.500 gram tepung terigu protein tinggi</p>
+				<p>2.100 gram gula pasir</p>
+				<p>3.11 gram atau 1 bungkus ragi instan</p>
+				<p>4.1/4 sdt baking powder</p>
+				<p>5.1/2 sdt garam</p>
+				<p>6.2 kuning telur</p>
+				<p>7.100 gram mentega</p>
+				<p>8.250 ml susu cair</p>
+
+				<p>
+					<strong>Olesan:</strong>
+				</p>
+				<p>1.Mentega</p>
+				<p>2.Cokelat yang sudah di tim</p>
+				<p>3.Meises cokelat</p>
+				<p>4.Selai</p>
+				<p>5.Gula halus</p>
+				<p>6.Sesusaikan dengan selera kamu</p>
+
+				<p>
+					<strong>cara membuat:</strong>
+				</p>
+
+				<p>1.Campur tepung terigu, gula, ragi instan, baking powder dan garam, aduk dengan tangan.</p>
+				<p>2.Tambahkan kuning telur, uleni hingga berbentuk butiran halus.</p>
+				<p>3.Tuangkan susu cair sedikit demi sedikit. Uleni hingga tercampur rata.</p>
+				<p>4.Tambahkan mentega, uleni lagi dengan gerakan memutar, sesekali banting adonan. Lakukan hingga adonan licin dan kalis, kurang lebih 15 menit.</p>
+				<p>5.Kumpulkan adonan menjadi satu dalam baskom. Tutupi dengan kain bersih, diamkan selama 1 jam.</p>
+				<p>6.Tinju-tinju adonan hingga udara keluar dan adonan kempes.</p>
+				<p>7.Bagi adonan menjadi 30 bagian, buat bulatan seperti bola. Diamkan lagi selama 10 menit.</p>
+				<p>8.Lubangi masing-masing adonan, untuk hasil terbaik, lakukan dengan tangan.</p>
+				<p>9.Goreng donat dalam minyak panas menggunakan api kecil-sedang. Goreng satu bagian hingga menguning, lalu balik hingga semua bagian berwarna kuning keemasan.</p>
+				<p>10.Angkat, tiriskan dan tunggu hingga dingin.</p>
+				<p>11.Hias dengan toping sesuai selera.</p>
+				
+				
+
+
+
+<div class="conteudo">
+				<div class="post-info">
+				</div>
+				<p><h2>Resep Cara Membuat Donat Kentang Untuk Pemula</h2></p>
+				<img class="img-responsive" src="https://cdns.klimg.com/vemale.com/p/resep-donat-kentang-untuk-pemula.jpg"/>
+
+				<p>
+					<strong>bahan:</strong>
+				</p>
+				<p>1. 3 buah kentang yang besarnya sedang (direbus kemudian ditumbuk hingga
+				halus</p>
+				<p>2.250 gr terigu (atau kalau kurang bisa ditambahkan sampai adonan tidak lengket di tangan)</p>
+				<p>3.1/2 bungkus fermipan</p>
+				<p>4.2 kuning telur</p>
+				<p>5.1 sdm mentega (dicairkan)</p>
+				<p>6.1 sdm gula pasir (atau sesuai selera)</p>
+				<p>7.susu bubuk secukupnya.</p>
+				
+
+				<p>
+					<strong>Cara membuat</strong>
+				</p>
+				<p>1.Campur semua bahan dan diuleni hingga kalis (tidak lengket di tangan),</p>
+				<p>2.sambil juga dibanting-banting kira-kira 1/2 jam.</p>
+				<p>3.Kemudian di tutupi dengan kain basah hingga mengembang (kira-kira 1/2sampai 1 jam).</p>
+				<p>4.Setelah itu dicetak lalu digoreng. Baru dihiasi sesuai selera.</p>
+				<p>5.Mudah bukan? Oh iya Ladies, saat menggoreng donat usahakan untuk tidak terlalu sering membolak balik donat ya. Hal ini supaya donat tidak terlalu berminyak saat dimakan. Balik saja donat kalau permukaannya agak kecoklatan. Selamat mencoba.</p>
+</body>
+</html>

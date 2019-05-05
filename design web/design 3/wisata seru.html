@@ -1,0 +1,425 @@
+<html>
+<head>
+ 
+	<title>Membuat Menu Dropdown Dengan CSS3 dan HTML5 - www.malasngoding.com</title>
+ 
+</head>
+<body>
+ 
+	<style type="text/css">
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	background: #eee;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	border:0;
+	background:#dedede;
+	height:1px;
+}		
+
+header{
+	text-align: center;
+	color: #232323;
+}
+
+header .judul{
+	font-size: 17pt;
+}
+
+header .deskripsi{
+	font-size: 11pt;
+}
+
+.wrap {
+	width: 950px;
+	margin:25px auto;
+}
+
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	width: 650px;
+	margin:0 0 0;
+	background: #1abc9c;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+
+nav.menu ul li {
+	margin:0;
+	float:left;
+}
+
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav.menu ul a:hover {
+	text-decoration: underline;
+	background:#16a085;
+}
+
+.sidebar {
+	float:right;
+	width:275px;
+}
+
+.sidebar .widget {
+	padding:25px;
+	margin:0 0 25px;
+	background:#fff;
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s ease;
+}
+
+.sidebar .widget:hover {
+	border-bottom: 2px solid #3498db;
+}
+
+.sidebar .widget h2 {
+	padding:0;
+	margin:0 0 15px;
+	color:#3498db;
+	font-size: 18px;
+	font-weight:800;
+	text-transform: uppercase;
+}
+
+.sidebar .widget p {
+	font-size: 14px;
+}
+
+.sidebar .widget p:last-child {
+	margin:0;
+}
+
+.blog {
+	float:left;
+}
+
+.conteudo {
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: #fff;
+	border:1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+
+.conteudo img {
+	min-width: 650px;
+	margin:0 0 25px -25px;
+	max-width: 650px;
+}
+
+.conteudo h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+
+.conteudo p:last-child {
+	margin: 0;
+}
+
+.conteudo .continue-lendo {
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+}
+
+.conteudo .continue-lendo:hover {
+	margin-left:10px;
+}
+
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+
+	.header {
+		position:inherit;
+	}
+
+	.wrap {
+		width: 90%;
+		margin:25px auto;
+	}
+	.sidebar {
+		width:100%;
+		margin:25px 0 0;
+		float:right;
+	}
+
+	.sidebar .widget {
+		padding:5%;
+	}
+
+	nav.menu ul {
+		width: 100%;
+	}
+
+	nav.menu ul {
+		float:inherit;
+	}
+
+	nav.menu ul li {
+		float:inherit;
+		margin:0;
+	}
+
+	nav.menu ul a {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid #1abf9f;
+		border-bottom:1px solid #16a085;
+	}
+
+	.blog {
+		width:90%;
+	}
+
+	.conteudo {
+		float:inherit;
+		margin:0 auto 25px;
+		width:101%;
+		border:1px solid #dedede;
+		padding:5%;  
+		background: #fff;
+	}
+
+	.conteudo img {
+		max-width: 110%;
+		margin:0 0 25px -5%;
+		min-width: 110%;
+	}
+
+	.conteudo .continue-lendo:hover {
+		margin-left:0;
+	}
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+
+	.sidebar {
+		display:none
+	}
+	.post-info {
+		display:none;
+	}
+
+	.conteudo {
+		margin:25px auto;
+	}
+
+	.conteudo img {
+		margin:-5% 0 25px -5%;
+	}			
+}
+html,body{
+		padding: 0;
+		margin:0;
+		font-family: sans-serif;
+	}
+ 
+	.menu-malasngoding{
+		background-color: #3141ff;
+	}
+ 
+	.menu-malasngoding ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+ 
+	.menu-malasngoding > ul > li {
+		float: left;
+	}
+ 
+	
+	.menu-malasngoding li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+ 
+	.menu-malasngoding li a:hover{
+		background-color: #2525ff;
+	}
+ 
+	li.dropdown {
+		display: inline-block;
+	}
+ 
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #fff !important;
+	}
+ 
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		background-color: #f9f9f9;
+	}
+ 
+	.isi-dropdown a {
+		color: #3c3c3c !important;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #232323 !important;
+		background: #f3f3f3 !important;
+	}
+</style>
+ 
+ 
+<header class="header">
+	<div class="menu-malasngoding">
+ 
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a></li>
+			<li class="dropdown"><a href="#">Menu 3</a>
+				<ul class="isi-dropdown">
+					<li><a href="#">Sub Menu 1</a></li>
+					<li><a href="#">Sub Menu 2</a></li>
+					<li><a href="#">Sub Menu 3</a></li>
+					<li><a href="#">Sub Menu 4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Menu 4</a></li>
+		</ul>
+ 
+	</div>
+</header>
+ 
+<br/>
+ 
+<center>
+	<h1>Macam Macam Artikel Terbanyak Terlengkap Dan Terbesar <br/> www.artikel.com</h1>
+</center>
+<html>
+<head>
+	<title>MalasNgoding's Blog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<!-- bagian header template -->
+	<header>
+		<h1 class="judul">arikel terpopler</h1>
+		<p class="deskripsi">menyediakan berita terlengkap terseru dan terbanyak.</p>
+	</header>
+	<!-- akhir bagian header template -->
+	
+	<div class="wrap">
+		<!-- bagian menu		 -->
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#">Tutorial</a>
+				</li>
+				<li>
+					<a href="#">Kontak</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- akhir bagian menu -->
+ 
+		<!-- bagian sidebar website -->
+		
+		
+		<!-- akhir bagian sidebar website -->
+ 
+		<!-- bagian konten Blog -->
+		<div class="blog">
+			<div class="conteudo">
+				<div class="post-info">
+					Di Posting Oleh <b>Diki Alfarabi Hadi</b>
+				</div>
+			
+				<img class="size-full wp-image-7577 b-loaded" alt="" width="800" height="600" srcset="https://wisatalengkap.com/wp-content/uploads/2018/07/Ketiga.jpg 800w, https://wisatalengkap.com/wp-content/uploads/2018/07/Ketiga-300x225.jpg 300w, https://wisatalengkap.com/wp-content/uploads/2018/07/Ketiga-768x576.jpg 768w, https://wisatalengkap.com/wp-content/uploads/2018/07/Ketiga-86x64.jpg 86w" sizes="(max-width: 800px) 100vw, 800px" src="https://wisatalengkap.com/wp-content/uploads/2018/07/Ketiga.jpg">
+				<h1> tempat hiburan ter seru di depok </h1>
+				<hr>
+				<p>
+					Depok merupakan sebuah Kota di Jawa Barat, Kota ini memiliki sejuta pesona dan panaroma alam yang menakjubkan dan masih banyak yang tersembunyi, sehingga masih banyak orang yang belum mengetahui akan keindahan dan tempat keren yang ada di Depok tersebut. Depok punya banyak Spot objek wisata keren, mulai dari Situs budaya, situs bersejarah, spot foto foto kekinian , sampai air terjun yang sangat memanjakan mata dan harus segera kalian explore.
+Jika Anda punya rencana untuk berlibur ke Depok, Jangan khawatir akan keindahannya, Kota ini menawarkan cukup banyak wisata pilihan untuk Anda dikunjungi. Selama ini jika Depok jarang terdengar tempat yang keren untuk berlibur, namun ternyata Depok ini juga memiliki banyak tempat-tempat wisata alam yang keren yang tak kalah dengan wisata di Semarang, Jogja ataupun kota besar lainnya.
+Baiklah agar tidak panjang lebar, langsung saja ke titik tujuan artikel ini kami buat, Artikel ini bertujuan Untuk memudahkan Anda menemukan tempat wisata di Depok yang paling indah, Terbaru dan di rekomendasikan untuk Anda Jelajahi. Berikut kami ulas secara singkat 44 Tempat Wisata di Depok Terbaru yang harus segera Anda explore:
+				</p>				
+				<a href="#" class="continue-lendo">Selengkapnya →</a>
+			</div>
+			<div class="conteudo">
+				<div class="post-info">
+					Di Posting Oleh <b>Diki Alfarabi Hadi</b>
+				</div>
+				<img class="img-responsive" src="https://www.gomuslim.co.id/images/post/30rich.jpg" alt="">
+				<h1> Nikmat Dunia Berlimpah Karena Berkah atau Istidraj? Simak Enam Cirinya </h1>
+				<hr>
+				<p>
+					artikel.com  - Sahabat artikel, Istidraj dalam bahasa arab artinya suatu jebakan berupa kelapangan rezeki padahal yang diberi dalam keadaan terus menerus bermaksiat pada Allah.
+
+Allah Ta’ala berfirman dalam QS. Al An’am ayat 44:
+
+Maka tatkala mereka melupakan peringatan yang telah diberikan kepada mereka, Kamipun membukakan semua pintu-pintu kesenangan untuk mereka; sehingga apabila mereka bergembira dengan apa yang telah diberikan kepada mereka, Kami siksa mereka dengan sekonyong-konyong, maka ketika itu mereka terdiam berputus asa.
+
+Selain itu, dalam Surat Ali ‘Imran ayat 178 juga dijelaskan:
+
+Dan janganlah sekali-kali orang-orang kafir menyangka, bahwa pemberian tangguh Kami kepada mereka adalah lebih baik bagi mereka. Sesungguhnya Kami memberi tangguh kepada mereka hanyalah supaya bertambah-tambah dosa mereka; dan bagi mereka azab yang menghinakan.
+				</p>				
+				<a href="#" class="continue-lendo">Selengkapnya →</a>
+			</div>
+		</div>
+		<!-- akhir bagian konten Blog -->
+	</div>
+ 
+</body>
+</html>
+
+
+
+ 
+</body>
+</html>
